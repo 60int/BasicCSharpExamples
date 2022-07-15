@@ -3,9 +3,13 @@
 class Program
 {
     static readonly List<Data> dataList = new();
-    static void Main(string[] args)
+    static void Main()
     {
         ReadCSV();
+        FirstTask();
+        SecondTask();
+        ThirdTask();
+        FourtTask();
     }
     private static void ReadCSV()
     {
@@ -14,6 +18,47 @@ class Program
             Data data = new(item);
             dataList.Add(data);
         }
+    }
+    private static void FirstTask()
+    {
+        Console.WriteLine($"1. Task: {dataList.Count()}");
+    }
+    private static void SecondTask()
+    {
+        Console.WriteLine("2. Task: Enter a month: ");
+        int month = int.Parse(Console.ReadLine());
+        if (month < 1 || month > 12)
+        {
+            Console.WriteLine("2. Task: This month doesn't exist.");
+        }
+        else
+        {
+            int sum = 0;
+            foreach (Data item in dataList)
+            {
+                if (item.Month == month)
+                {
+                    sum += item.Taxes;
+                }
+            }
+            Console.WriteLine($"2. Task: {month}. month's income: {sum} USD");
+        }
+    }
+    private static void ThirdTask()
+    {
+        Console.WriteLine($"3. Task: Highest tax revenue for a single property was in the " +
+            $"{dataList.Where(a => a.Year == 2).OrderByDescending(x => x.Taxes).First().Month}. month.");
+    }
+    private static void FourtTask()
+    {
+        using StreamWriter writer = new("taxes2.html", false, Encoding.UTF8);
+        writer.Write("<table>");
+        foreach (Data item in dataList)
+        {
+            writer.Write(item.ToHTML());
+        }
+        writer.WriteLine("</table>");
+        Console.WriteLine("4. Task: taxes2.html");
     }
 }
 class Data
