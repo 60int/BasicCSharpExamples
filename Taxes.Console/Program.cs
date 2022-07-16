@@ -19,10 +19,15 @@ class Program
             dataList.Add(data);
         }
     }
+
+    //Write how many tax returns were made this year
     private static void FirstTask()
     {
         Console.WriteLine($"1. Task: {dataList.Count()}");
     }
+
+    //Ask the user for a month (number from 1 to 12) and count how much
+    //money came in from tax returns in that month
     private static void SecondTask()
     {
         Console.WriteLine("2. Task: Enter a month: ");
@@ -44,11 +49,15 @@ class Program
             Console.WriteLine($"2. Task: {month}. month's income: {sum} USD");
         }
     }
+
+    //Search for which month had the biggest revenue in the second year
     private static void ThirdTask()
     {
         Console.WriteLine($"3. Task: Highest tax revenue for a single property was in the " +
             $"{dataList.Where(a => a.Year == 2).OrderByDescending(x => x.Taxes).First().Month}. month.");
     }
+
+    //Create a basic HTML page where you display all the tax returns in a table
     private static void FourtTask()
     {
         using StreamWriter writer = new("taxes2.html", false, Encoding.UTF8);
