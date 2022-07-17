@@ -23,7 +23,7 @@ class Program
     //Write how many tax returns were made this year
     private static void FirstTask()
     {
-        Console.WriteLine($"1. Task: {dataList.Count()}");
+        Console.WriteLine($"1. Task: {dataList.Count}");
     }
 
     //Ask the user for a month (number from 1 to 12) and count how much
@@ -80,13 +80,13 @@ class Data
     public int Taxes { get; set; }
     public Data(string line)
     {
-        string[] la = line.Split(';');
-        Year = int.Parse(la[0]);
-        Month = int.Parse(la[1]);
-        FloorArea = int.Parse(la[2]);
-        Settlement = la[3];
-        ComfortLevel = la[4];
-        Taxes = int.Parse(la[5]);
+        string[] parts = line.Split(';');
+        Year = int.Parse(parts[0]);
+        Month = int.Parse(parts[1]);
+        FloorArea = int.Parse(parts[2]);
+        Settlement = parts[3];
+        ComfortLevel = parts[4];
+        Taxes = int.Parse(parts[5]);
     }
     public string ToHTML()
     {
