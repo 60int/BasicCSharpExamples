@@ -7,13 +7,24 @@ class Program
     //Display number of players
 
     //Second task
-    //
+    //Display the name and height of players who last played
+    //on october 1999 in a list and only show one decimal number
+    //for their height
+
+    //Third task
+    //Ask the user for a date (between 1990 and 1999)
+    //if the user gave a wrong number display an error message
+
+    //Fourth task
+    //Display the sum of the previous players weight
+    //Only display two decimal numbers and round the numbers
     static readonly List<Player> players = new();
     static void Main()
     {
         ReadCSV();
         FirstTask();
         SecondTask();
+        Task3_4();
     }
     private static void ReadCSV()
     {
@@ -33,11 +44,11 @@ class Program
             .ToList()
             .ForEach(x => Console.WriteLine($"\t{x.Name}, {Math.Round(x.Height * 2.54, 1)}"));
     }
-    private static void Task5_6()
+    private static void Task3_4()
     {
         bool included = false;
         int input = 0;
-        Console.WriteLine("5. Task: ");
+        Console.WriteLine("3. Task: ");
         Console.WriteLine("Type a number between 1990 and 1999: ");
         while (included == false)
         {
@@ -62,7 +73,7 @@ class Program
             }
         }
         double sum = weightSum / piece;
-        Console.WriteLine($"6. Task: {Math.Round(sum, 2)}");
+        Console.WriteLine($"4. Task: {Math.Round(sum, 2)}");
     }
 }
 class Player
@@ -72,9 +83,9 @@ class Player
     public DateTime LatestDate { get; set; }
     public int Weight { get; set; }
     public double Height { get; set; }
-    public Player(string line)
+    public Player(string lines)
     {
-        string[] parts = line.Split(';');
+        string[] parts = lines.Split(';');
         Name = parts[0];
         FirstDate = DateTime.Parse(parts[1]);
         LatestDate = DateTime.Parse(parts[2]);

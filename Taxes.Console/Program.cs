@@ -83,9 +83,9 @@ class Data
     public string Settlement { get; set; }
     public string ComfortLevel { get; set; }
     public int Taxes { get; set; }
-    public Data(string line)
+    public Data(string lines)
     {
-        string[] parts = line.Split(';');
+        string[] parts = lines.Split(';');
         Year = int.Parse(parts[0]);
         Month = int.Parse(parts[1]);
         FloorArea = int.Parse(parts[2]);
