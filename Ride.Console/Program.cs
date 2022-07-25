@@ -3,16 +3,38 @@
 class Program
 {
     //Task 1
-    //Read CSV file
+    //Read CSV file, display all taxis
+
+    //Task 2
+    //Display the fare of taxi with id number 6185
+
+    //Task 3
+    //Display number of payments of payment types in a list
 
     static readonly List<Taxi> taxis = new();
     static void Main()
     {
         ReadCSV();
+        Task1();
+        Task2();
+        Task3();
     }
     private static void ReadCSV()
     {
         Resources.taxis.Split(new string[] { Environment.NewLine }, StringSplitOptions.None).Skip(1).ToList().ForEach(a => taxis.Add(new Taxi(a)));
+    }
+    private static void Task1()
+    {
+        Console.WriteLine($"1. Task: {taxis.Count}");
+    }
+    private static void Task2()
+    {
+        Console.WriteLine($"2. Task: {taxis.Count(a => a.Taxi_Id == 6185)} rides made: {taxis.Where(a => a.Taxi_Id == 6185).Sum(x => x.Fare)}");
+    }
+    private static void Task3()
+    {
+        Console.WriteLine("3. Task: ");
+        taxis.GroupBy(a => a.PayType).ToList().ForEach(x => Console.WriteLine($"\t{x.Key}: {x.Count()}"));
     }
 }
 class Taxi
