@@ -11,6 +11,10 @@ class Program
     //Task 3
     //Display number of payments of payment types in a list
 
+    //Task 4
+    //Count and display the sum of distance the taxis have done, only display
+    //two decimal numbers
+
     static readonly List<Taxi> taxis = new();
     static void Main()
     {
@@ -18,6 +22,8 @@ class Program
         Task1();
         Task2();
         Task3();
+        Task4();
+        Task5();
     }
     private static void ReadCSV()
     {
@@ -35,6 +41,18 @@ class Program
     {
         Console.WriteLine("3. Task: ");
         taxis.GroupBy(a => a.PayType).ToList().ForEach(x => Console.WriteLine($"\t{x.Key}: {x.Count()}"));
+    }
+    private static void Task4()
+    {
+        Console.WriteLine($"4. Task: {Math.Round(taxis.Sum(a => a.Distance * 1.6),2)} km");
+    }
+    private static void Task5()
+    {
+        Console.WriteLine("7. Task: Longest ride: ");
+        Console.WriteLine($"\tTravel time: {taxis.OrderBy(a => a.TravelTime).Last().TravelTime} seconds");
+        Console.WriteLine($"\tID of driver: {taxis.OrderBy(a => a.TravelTime).Last().Taxi_Id}");
+        Console.WriteLine($"\tDistance: {taxis.OrderBy(a => a.TravelTime).Last().Distance} km");
+        Console.WriteLine($"\tFare: {taxis.OrderBy(a => a.TravelTime).Last().Fare} $");
     }
 }
 class Taxi
