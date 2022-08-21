@@ -1,4 +1,5 @@
 ﻿using Ride.Console.Properties;
+using System.Text;
 
 class Program
 {
@@ -48,11 +49,32 @@ class Program
     }
     private static void Task5()
     {
-        Console.WriteLine("7. Task: Longest ride: ");
+        Console.WriteLine("5. Task: Longest ride: ");
         Console.WriteLine($"\tTravel time: {taxis.OrderBy(a => a.TravelTime).Last().TravelTime} seconds");
         Console.WriteLine($"\tID of driver: {taxis.OrderBy(a => a.TravelTime).Last().Taxi_Id}");
         Console.WriteLine($"\tDistance: {taxis.OrderBy(a => a.TravelTime).Last().Distance} km");
         Console.WriteLine($"\tFare: {taxis.OrderBy(a => a.TravelTime).Last().Fare} $");
+    }
+    private static void Task6()
+    {
+        List<Taxi> errors = taxis.OrderBy(x => x.Departure).ToList();
+        StreamWriter writer = new("ErrorList.txt", false, Encoding.UTF8);
+        writer.WriteLine("taxi_id;traveltime;distance;fare;tip;paytype");
+        for (int i = 2; i < errors.Count; i++)
+        {
+            if (errors[i].Distance == 0 && (errors[i].TravelTime > 0 || errors[i].Fare > 0))
+            {
+                writer.Write(errors[i].Taxi_Id + ";");
+                writer.Write(errors[i].Departure + ";");
+                writer.Write(errors[i].Distance + ";");
+                writer.Write(errors[i].Fare + ";");
+                writer.Write(errors[i].Tip+ ";");
+                writer.Write(errors[i].PayType+ ";");
+                writer.Write("\n");
+            }
+        }
+        writer.Close();
+        Console.WriteLine("6. Task: ErrorList.txt");
     }
 }
 class Taxi
