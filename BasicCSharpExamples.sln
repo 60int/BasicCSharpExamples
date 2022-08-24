@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lefthanded.Console", "Lefthanded.Console\Lefthanded.Console.csproj", "{D1067FC3-9484-4599-9543-19C8101C8857}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ride.Console", "Ride.Console\Ride.Console.csproj", "{87E3DBE9-24E6-482C-A17B-159C176DDDA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ride.Console", "Ride.Console\Ride.Console.csproj", "{87E3DBE9-24E6-482C-A17B-159C176DDDA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chemistry.Console", "Chemistry.Console\Chemistry.Console.csproj", "{D1190DB8-8B86-42B7-BF9C-7B0E5F84AB9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{87E3DBE9-24E6-482C-A17B-159C176DDDA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87E3DBE9-24E6-482C-A17B-159C176DDDA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87E3DBE9-24E6-482C-A17B-159C176DDDA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1190DB8-8B86-42B7-BF9C-7B0E5F84AB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1190DB8-8B86-42B7-BF9C-7B0E5F84AB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1190DB8-8B86-42B7-BF9C-7B0E5F84AB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1190DB8-8B86-42B7-BF9C-7B0E5F84AB9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,6 +16,15 @@ class Program
     //Count and display the sum of distance the taxis have done, only display
     //two decimal numbers
 
+    //Task 5
+    //Display the longest ride
+
+    //Task 6
+    //Create a text file that contains cases where the travel time and the fare of a ride
+    //is bigger than 0 but the distance of that ride is 0
+    //The lines in the text file should be an ascending ordered to the date and it should
+    //match the structure of "taxis.csv"
+
     static readonly List<Taxi> taxis = new();
     static void Main()
     {
@@ -25,6 +34,7 @@ class Program
         Task3();
         Task4();
         Task5();
+        Task6();
     }
     private static void ReadCSV()
     {
