@@ -4,7 +4,7 @@ class Program
 {
     //First task
     //Create class for Data and read taxes.csv file
-    //Write how many tax returns were made this year
+    //Display how many tax returns were made this year
 
     //Second task
     //Ask the user for a month (number from 1 to 12) and count how much
