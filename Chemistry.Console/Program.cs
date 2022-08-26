@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.RegularExpressions;
 
 class Program
 {
@@ -12,6 +13,8 @@ class Program
     {
         ReadCSV();
         Task1();
+        Task2();
+        Task3();
     }
     private static void ReadCSV()
     {
@@ -24,6 +27,25 @@ class Program
     private static void Task1()
     {
         Console.WriteLine($"1. Task: Number of elements in list: {elements.Count}");
+    }
+    private static void Task2()
+    {
+        Console.WriteLine($"2. Task: {elements.Count(a => a.Year!.Contains("Ancient"))}");
+    }
+    private static string Task3()
+    {
+        string pattern = @"^[a-zA-Z]+$";
+        Regex regex = new(pattern);
+        Match match;
+        string symbol;
+        Console.Write("5. Task: Write a checmical symbol: ");
+        string? v = Console.ReadLine();
+        symbol = v!;
+        do
+        {
+            match = regex.Match(symbol);
+        } while (!(symbol.Length == 1 || symbol.Length == 2) && match.Success);
+        return symbol;
     }
 }
 class Element
