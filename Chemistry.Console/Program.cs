@@ -47,6 +47,27 @@ class Program
         } while (!(symbol.Length == 1 || symbol.Length == 2) && match.Success);
         return symbol;
     }
+    private static void Task4(string symbol)
+    {
+        Console.WriteLine("4. Task: Search: ");
+        bool symbolIsTrue = false;
+        for (int i = 0; i < elements.Count; i++)
+        {
+            if (elements[i].Symbol?.ToUpper() == symbol.ToUpper())
+            {
+                symbolIsTrue = true;
+                Console.WriteLine($"\tThe symbol of element: {elements[i].Symbol}");
+                Console.WriteLine($"\tThe name of element: {elements[i].Name}");
+                Console.WriteLine($"\tThe number of element: {elements[i].AtomicNumber}");
+                Console.WriteLine($"\tThe year of discovery: {elements[i].Year}");
+                Console.WriteLine($"\tThe chemists name: {elements[i].Chemist}");
+            }
+        }
+        if (symbolIsTrue == false)
+        {
+            Console.WriteLine("Symbol doesn't exist");
+        }
+    }
 }
 class Element
 {
