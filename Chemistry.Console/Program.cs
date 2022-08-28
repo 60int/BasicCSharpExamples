@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.Json.Serialization.Metadata;
 using System.Text.RegularExpressions;
 
 class Program
@@ -7,6 +8,9 @@ class Program
     //Create class for Data and read chemistry.csv file
     //Display the number of elements in file
 
+    //Second task
+    //
+
     static readonly List<Element> elements = new();
 
     static void Main()
@@ -14,7 +18,10 @@ class Program
         ReadCSV();
         Task1();
         Task2();
-        Task3();
+        string Symbol = Task3();
+        Task4(Symbol);
+        Task5();
+        Task6();
     }
     private static void ReadCSV()
     {
@@ -67,6 +74,26 @@ class Program
         {
             Console.WriteLine("Symbol doesn't exist");
         }
+    }
+    private static void Task5()
+    {
+        int longest = 0;
+        for (int i = 0; i < elements.Count - 1; i++)
+        {
+            if (elements[i].Year != "Ancient")
+            {
+                if (int.Parse(elements[i + 1].Year) - int.Parse(elements[i].Year)> longest)
+                {
+                    longest = int.Parse(elements[i + 1].Year) - int.Parse(elements[i].Year);
+                }
+            }
+        }
+        Console.WriteLine($"5. Task: The longest year between two discoveries was {longest}.");
+    }
+    private static void Task6()
+    {
+        Console.WriteLine("8. Task: Statistics: ");
+        elements.GroupBy(j => j.Year).Where(g => g.Count() > 3 && g.Key != "Ancient").ToList().ForEach(a => Console.WriteLine($"\t{a.Key}: {a.Count()} pieces."));
     }
 }
 class Element
