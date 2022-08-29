@@ -9,7 +9,21 @@ class Program
     //Display the number of elements in file
 
     //Second task
-    //
+    //Display the number of elements discovered in acient times
+
+    //Third task
+    //Ask the user for a symbol, continue the search until the symbol is at least
+    //one or two characters long and contains characters from the english alphabet [A-Z, a-z]
+
+    //Fourth task
+    //Select the symbol from task 3 and display the information about that element.
+    //The search shouldn't be case sensitive, and if the search fails
+    //Write "Symbol doesn't exist" in the console
+    
+    //Fifth task
+    //Search for and then display the longest period between two discoveries
+
+    //Display the years where three or more discoveries occured
 
     static readonly List<Element> elements = new();
 
@@ -63,10 +77,10 @@ class Program
             if (elements[i].Symbol?.ToUpper() == symbol.ToUpper())
             {
                 symbolIsTrue = true;
-                Console.WriteLine($"\tThe symbol of element: {elements[i].Symbol}");
-                Console.WriteLine($"\tThe name of element: {elements[i].Name}");
-                Console.WriteLine($"\tThe number of element: {elements[i].AtomicNumber}");
-                Console.WriteLine($"\tThe year of discovery: {elements[i].Year}");
+                Console.WriteLine($"\tSymbol of the element: {elements[i].Symbol}");
+                Console.WriteLine($"\tName of the element: {elements[i].Name}");
+                Console.WriteLine($"\tAtomic umber of the element: {elements[i].AtomicNumber}");
+                Console.WriteLine($"\tYear of discovery: {elements[i].Year}");
                 Console.WriteLine($"\tThe chemists name: {elements[i].Chemist}");
             }
         }
