@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 class Program
 {
     //First task
-    //Create class for Data and read chemistry.csv file
+    //Create a class for the Data and read chemistry.csv file
     //Display the number of elements in file
 
     //Second task
