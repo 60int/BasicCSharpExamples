@@ -1,3 +1,3 @@
 # BasicCSharpExamples
 
-Basic console applications to practice C#
+Basic console applications to practice programming in C#
