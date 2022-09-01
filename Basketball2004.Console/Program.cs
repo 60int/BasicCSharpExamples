@@ -7,6 +7,19 @@ class Program
     //Create a class for the Data and read results.csv file
     //Display the number of games played by Real Madrid in home team and in away on console
 
+    //Second task
+    //Display if there were games that ended in a draw on the console
+
+    //Third task
+    //Search for the real name of the team from Barcelona and display it on the console
+
+    //Fourth tasl
+    //Locate the teams that played on 2004.11.21 and display the scores on the console
+
+    //Fifth task
+    //Find the stadiums that were the locations for games more than 20 times
+    //and display them on the console
+
     static readonly List<Result> results = new();
     static void Main()
     {

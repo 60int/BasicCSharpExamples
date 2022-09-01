@@ -4,7 +4,7 @@ using System.Text;
 class Program
 {
     //Task 1
-    //Read CSV file, display all taxis
+    //Read CSV file and display all taxis on the console
 
     //Task 2
     //Display the fare of taxi with id number 6185

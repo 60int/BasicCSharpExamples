@@ -6,7 +6,7 @@ class Program
 {
     //First task
     //Create a class for the Data and read chemistry.csv file
-    //Display the number of elements in file
+    //Display the number of elements in the file on the console
 
     //Second task
     //Display the number of elements discovered in acient times
@@ -23,6 +23,7 @@ class Program
     //Fifth task
     //Search for and then display the longest period between two discoveries
 
+    //Sixth task
     //Display the years where three or more discoveries occured
 
     static readonly List<Element> elements = new();

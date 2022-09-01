@@ -4,7 +4,7 @@ class Program
 {
     //First task
     //Create class for players and read lefthanded.csv file
-    //Display number of players
+    //Display number of players on the console
 
     //Second task
     //Display the name and height of players who last played
@@ -18,6 +18,7 @@ class Program
     //Fourth task
     //Display the sum of the previous players weight
     //Only display two decimal numbers and round the numbers
+
     static readonly List<Player> players = new();
     static void Main()
     {
