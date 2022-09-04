@@ -5,6 +5,29 @@ using System.Text;
 
 class Program
 {
+    //First task
+    //Create classes for DogNames, DogBreeds and Dogs csv files and read them with your program
+    //Display number of available dog names on the console
+
+    //Second task
+    //Display the average age of dogs in dogs csv file, display them
+    //on the console with two decimal number showing
+
+    //Third task
+    //Display the information about oldest dogs in the csv file
+
+    //Fourth task
+    //Display the number of dog visitors in the clinic on 10.01.2018
+    //on the console, by breed of the dogs
+
+    //Fifth task
+    //Search for and display the busiest day in the clinic
+
+    //Sixth task
+    //Create a text file that contains the examined dogs' names and the number of dogs
+    //The list should be in a name popularity order, meaning the most used dog names
+    //should be at first
+
     static readonly List<DogBreeds> dogBreeds = new();
     static readonly List<DogNames> dogNames = new();
     static readonly List<Dogs> dogs = new();
