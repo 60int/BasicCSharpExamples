@@ -36,7 +36,7 @@ class Program
     }
     private static void FirstTask()
     {
-        Console.WriteLine($"1. Task: {players.Count}");
+        Console.WriteLine($"1. Task: Number of players in file: {players.Count}");
     }
     private static void SecondTask()
     {

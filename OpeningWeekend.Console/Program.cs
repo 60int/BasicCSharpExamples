@@ -6,6 +6,9 @@ class Program
     static void Main()
     {
         ReadCSV();
+        Task1();
+        Task2();
+        Task3();
     }
     private static void ReadCSV()
     {
@@ -14,6 +17,23 @@ class Program
             Film film = new(item);
             films.Add(film);
         }
+    }
+    private static void Task1()
+    {
+        Console.WriteLine($"1. Task: Number of movies in file: {films.Count}");
+    }
+    private static void Task2()
+    {
+        Console.WriteLine($"2. Task: UIP Duna Publisher boxoffice 1. week: {films.Where(x => x.Publisher == "UIP").OrderBy(p => p.Premiere).Select(y => y.Income).Sum()} HUF");
+    }
+    private static void Task3()
+    {
+        Console.WriteLine("3. Task: Highest viewer count ever in first week: ");
+        Console.WriteLine($"\tOriginal Title: {films.OrderByDescending(a => a.Viewers).First().OriginalTitle}");
+        Console.WriteLine($"\tHungarianTitle: {films.OrderByDescending(a => a.Viewers).First().HungarianTitle}");
+        Console.WriteLine($"\tPublisher: {films.OrderByDescending(a => a.Viewers).First().Publisher}");
+        Console.WriteLine($"\tBoxoffice: {films.OrderByDescending(a => a.Viewers).First().Income} HUF");
+        Console.WriteLine($"\tViews: {films.OrderByDescending(a => a.Viewers).First().Viewers} people");
     }
 }
 class Film

@@ -42,7 +42,7 @@ class Program
     }
     private static void Task1()
     {
-        Console.WriteLine($"1. Task: {taxis.Count}");
+        Console.WriteLine($"1. Task: Number of taxis available: {taxis.Count}");
     }
     private static void Task2()
     {
