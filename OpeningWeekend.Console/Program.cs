@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
+using System.Threading.Tasks.Dataflow;
+using System.Transactions;
 
 class Program
 {
@@ -9,6 +12,9 @@ class Program
         Task1();
         Task2();
         Task3();
+        Task4();
+        Task5();
+        Task6();
     }
     private static void ReadCSV()
     {
@@ -34,6 +40,39 @@ class Program
         Console.WriteLine($"\tPublisher: {films.OrderByDescending(a => a.Viewers).First().Publisher}");
         Console.WriteLine($"\tBoxoffice: {films.OrderByDescending(a => a.Viewers).First().Income} HUF");
         Console.WriteLine($"\tViews: {films.OrderByDescending(a => a.Viewers).First().Viewers} people");
+    }
+    private static void Task4()
+    {
+        Console.WriteLine($"4. Task: {(films.All(a => a.OriginalTitle.StartsWith("W") && a.HungarianTitle.StartsWith("W")) ? "Theres was a movie like that" : "There wasn't a movie like that")}");
+    }
+    private static void Task5()
+    {
+        using StreamWriter writer = new("stats.csv");
+        writer.WriteLine("UIP" + ";" + films.Where(x => x.Publisher == "UIP").Count());
+        writer.WriteLine("Forum" + ";" + films.Where(x => x.Publisher == "Forum").Count());
+        writer.WriteLine("InterCom" + ";" + films.Where(x => x.Publisher == "InterCom").Count());
+        writer.WriteLine("Szinfolt Film" + ";" + films.Where(x => x.Publisher == "Szinfolt Film").Count());
+        writer.WriteLine("Bid Bang Media" + ";" + films.Where(x => x.Publisher == "Bid Bang Media").Count());
+        writer.WriteLine("MoziNet" + ";" + films.Where(x => x.Publisher == "MoziNet").Count());
+        writer.WriteLine("Vertigo" + ";" + films.Where(x => x.Publisher == "Vertigo").Count());
+        writer.WriteLine("Freeman" + ";" + films.Where(x => x.Publisher == "Freeman").Count());
+        writer.WriteLine("ADS" + ";" + films.Where(x => x.Publisher == "ADS").Count());
+        writer.Close();
+    }
+    private static void Task6()
+    {
+        int longest = 0;
+        for (int i = 0; i < films.Count - 1; i++)
+        {
+            if (films[i].Publisher == "InterCom")
+            {
+                if (int.Parse((films[i + 1].Premiere.Day).ToString()) - int.Parse((films[i].Premiere.Day).ToString()) > longest)
+                {
+                    longest = int.Parse((films[i + 1].Premiere.Day).ToString()) - int.Parse((films[i].Premiere.Day).ToString());
+                }
+            }
+        }
+        Console.WriteLine($"6. Task: The longest period between two InterCom releases: {longest} days");
     }
 }
 class Film
