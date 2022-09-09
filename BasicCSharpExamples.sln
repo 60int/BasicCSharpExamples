@@ -20,7 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basketball2004.Console", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dogs.Console", "Dogs.Console\Dogs.Console.csproj", "{552B004D-6A98-4C77-B8F7-36A928241C06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpeningWeekend.Console", "OpeningWeekend.Console\OpeningWeekend.Console.csproj", "{F58EB8CF-34D4-4486-BC77-C8EBBA10AC94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpeningWeekend.Console", "OpeningWeekend.Console\OpeningWeekend.Console.csproj", "{F58EB8CF-34D4-4486-BC77-C8EBBA10AC94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators.Console", "Operators.Console\Operators.Console.csproj", "{0C3CA4A1-C63C-41BB-B93F-84782E4EBFFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{F58EB8CF-34D4-4486-BC77-C8EBBA10AC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F58EB8CF-34D4-4486-BC77-C8EBBA10AC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F58EB8CF-34D4-4486-BC77-C8EBBA10AC94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C3CA4A1-C63C-41BB-B93F-84782E4EBFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3CA4A1-C63C-41BB-B93F-84782E4EBFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3CA4A1-C63C-41BB-B93F-84782E4EBFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3CA4A1-C63C-41BB-B93F-84782E4EBFFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
