@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Data.Common;
+using System.IO;
 
 class Program
 {
@@ -6,6 +7,12 @@ class Program
     static void Main()
     {
         ReadCSV();
+        Task1();
+        Task2();
+        Task3();
+        Task4();
+        Task6();
+        Task7();
     }
     private static void ReadCSV()
     {
@@ -37,6 +44,77 @@ class Program
         Console.WriteLine($"\t- -> {expressions.Count(o => o.Operator == "-")}");
         Console.WriteLine($"\t* -> {expressions.Count(o => o.Operator == "*")}");
         Console.WriteLine($"\t+ -> {expressions.Count(o => o.Operator == "+")}");
+    }
+    private static string Task5(string input)
+    {
+        if (input.Equals("true"))
+        {
+            return "end";
+        }
+        string[] sa = input.Split(' ');
+        string data = sa[0] + " " + sa[1] + " " + sa[2];
+        string output;
+        try
+        {
+            switch (sa[1])
+            {
+                default:
+                    return ($"{data} = Wrong operator");
+                case "mod":
+                    output = data + " = " + (int.Parse(sa[0]) % int.Parse(sa[2]));
+                    break;
+                case "div":
+                    output = data + " = " + (int.Parse(sa[0]) / int.Parse(sa[2]));
+                    break;
+                case "/":
+                    output = data + " = " + (int.Parse(sa[0]) / double.Parse(sa[2]));
+                    break;
+                case "-":
+                    output = data + " = " + (int.Parse(sa[0]) - int.Parse(sa[2]));
+                    break;
+                case "*":
+                    output = data + " = " + (int.Parse(sa[0]) * int.Parse(sa[2]));
+                    break;
+                case "+":
+                    output = data + " = " + (int.Parse(sa[0]) + int.Parse(sa[2]));
+                    break;
+            }
+        }
+        catch (Exception)
+        {
+            return ($"{data} = Unknown error");
+        }
+        return output;
+    }
+    private static void Task6()
+    {
+        string input = "";
+        while (!input.Equals("end"))
+        {
+            Console.WriteLine("6. Task: Please write an expression: ");
+            string? v = Console.ReadLine();
+            input = v!;
+            if (Task5(input).Equals("end"))
+            {
+                input = Task5(input);
+            }
+            else
+            {
+                Console.WriteLine(Task5(input) + "\n");
+            }
+        }
+    }
+    private static void Task7()
+    {
+        using StreamWriter writer = new("results.txt");
+        string input = "";
+        foreach (Expression item in expressions)
+        {
+            input = item.FirstOperand + " " + item.Operator + " " + item.SecondOperand;
+            writer.Write($"{Task5(input)} \n");
+        }
+        writer.Close();
+        Console.WriteLine("7. Task: results.txt is done");
     }
 }
 class Expression
