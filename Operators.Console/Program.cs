@@ -3,6 +3,11 @@ using System.IO;
 
 class Program
 {
+    //First Task
+    //Create class for expressions, read data from text file, display number of
+    //expressions on the console
+
+
     static readonly List<Expression> expressions = new();
     static void Main()
     {
