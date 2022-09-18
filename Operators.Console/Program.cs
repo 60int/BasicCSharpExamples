@@ -7,6 +7,17 @@ class Program
     //Create class for expressions, read data from text file, display number of
     //expressions on the console
 
+    //Second Task
+    //The division operator is called mod, find and display every
+    //expression for every division on the console
+
+    //Third Task
+    //Find all the occasions where both operands can be divided by 10
+    //and display them on the console
+
+    //Fourth task
+    //Create a statistic for every expression type, count every occasion
+    //of them and display them on the console
 
     static readonly List<Expression> expressions = new();
     static void Main()
@@ -52,7 +63,7 @@ class Program
     }
     private static string Task5(string input)
     {
-        if (input.Equals("true"))
+        if (input.Equals("end"))
         {
             return "end";
         }
