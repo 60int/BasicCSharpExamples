@@ -4,6 +4,21 @@ using System.Xml;
 
 class Program
 {
+    //First Task
+    //Read the pilots.csv file and display how many pilot are in the file, on the console
+
+    //Second Task
+    //Display the last pilots name in the file on the console
+
+    //Third Task
+    //Display every pilot who were born in the 19th century with the actual dates
+
+    //Fourth Task
+    //Search for the pilot with the smallest start number and display their nationality
+
+    //Fifth Task
+    //Search for pilots with a matching start number and display them on the console
+
     static readonly List<Pilot> pilots = new();
     static void Main()
     {
