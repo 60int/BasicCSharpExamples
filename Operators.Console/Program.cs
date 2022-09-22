@@ -15,9 +15,22 @@ class Program
     //Find all the occasions where both operands can be divided by 10
     //and display them on the console
 
-    //Fourth task
+    //Fourth Task
     //Create a statistic for every expression type, count every occasion
     //of them and display them on the console
+
+    //Fifth Task
+    //Create a method that returns a string with the type of operations.
+    //The method needs to handle the operations from Task Four and in
+    //case of a non-existent operation it should return with a "wrong operator" message.
+    //In other cases where the operator can't return normally, return with "Unkown error" message
+
+    //Sixth Task
+    //Ask the user for an expression then display the correct answer using the function from
+    //Task Five. Only stop the task when the user writes "end".
+
+    //Seventh Task
+    //Create a text file that contains every solution for the expression from "expressions.txt"
 
     static readonly List<Expression> expressions = new();
     static void Main()
