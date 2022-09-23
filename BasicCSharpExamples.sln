@@ -24,7 +24,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpeningWeekend.Console", "O
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operators.Console", "Operators.Console\Operators.Console.csproj", "{0C3CA4A1-C63C-41BB-B93F-84782E4EBFFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pilots.Console", "Pilots.Console\Pilots.Console.csproj", "{8707E67B-6FC7-451A-A013-B0CCEE532525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pilots.Console", "Pilots.Console\Pilots.Console.csproj", "{8707E67B-6FC7-451A-A013-B0CCEE532525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMatrix.Console", "SimpleMatrix.Console\SimpleMatrix.Console.csproj", "{3C39BD5D-654D-483F-8BDD-EEB0AD5B264E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +70,10 @@ Global
 		{8707E67B-6FC7-451A-A013-B0CCEE532525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8707E67B-6FC7-451A-A013-B0CCEE532525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8707E67B-6FC7-451A-A013-B0CCEE532525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C39BD5D-654D-483F-8BDD-EEB0AD5B264E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C39BD5D-654D-483F-8BDD-EEB0AD5B264E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C39BD5D-654D-483F-8BDD-EEB0AD5B264E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C39BD5D-654D-483F-8BDD-EEB0AD5B264E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
