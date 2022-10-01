@@ -1,0 +1,118 @@
+Year;Name;Symbol;Number;Chemist
+Ancient;Gold;Au;79;Unknown
+Ancient;Silver;Ag;47;Unknown
+Ancient;Copper;Cu;29;Unknown
+Ancient;Tin;Sn;50;Unknown
+Ancient;Lead;Pb;82;Unknown
+Ancient;Mercury;Hg;80;Unknown
+Ancient;Iron;Fe;26;Unknown
+Ancient;Sulfur;S;16;Unknown
+Ancient;Carbon;C;6;Unknown
+1250;Arsenic;As;33;Albertus Magnus
+1450;Antimony;Sb;51;B. Valentinius (W. Tölde)
+1520;Zink;Zn;30;Paracelsus
+1669;Phosphorus;P;15;H. Brand
+1735;Cobalt;Co;27;G. Brandt
+1740;Bismuth;Bi;83;I.H. Pott
+1741;Platinum;Pt;78;Ch. Wood
+1751;Nickel;Ni;28;A. F. Cronstedt
+1766;Hydrogen;H;1;Henry Cavendish
+1772;Nitrogen;N;7;D. Rutherford
+1774;Oxygen;O;8;J. Priestley
+1774;Chlorine;Cl;17;C. W. Scheele
+1774;Manganese;Mn;25;J. G. Gahn
+1782;Molybdenum;Mo;42;P. J. Hjelm
+1782;Tellurium;Te;52;F.J. Müller
+1783;Tungsten;W;74;J.J. Y F. D'Elhuyar
+1789;Uranium;U;92;M. H. Klaproth (oxid)
+1790;Strontium;Sr;38;A. Crawford
+1791;Zirconium;Zr;40;M. H. Klaproth (oxid)
+1791;Titan;Ti;22;W. Gregor (oxid)
+1794;Yttrium;Y;39;J. Gadolin (oxid)
+1797;Beryllium;Be;4;L. N. Vaquelin
+1797;Chromium;Cr;24;L. N. Vaquelin
+1801;Niobium;Nb;41;C. Hatchett
+1802;Tantalum;Ta;73;A. G. Ekeberg
+1803;Cerium;Ce;58;M. H. Klaproth (oxid)
+1803;Palladium;Pd;46;W. H. Wollaston
+1803;Rhodium;Rh;45;W. H. Wollaston
+1804;Osmium;Os;76;S. Tennant
+1804;Iridium;Ir;77;S. Tennant
+1807;Potassium;K;19;H. Davy
+1807;Sodium;Na;11;H. Davy
+1808;Barium;Ba;56;H. Davy
+1808;Calcium;Ca;20;H. Davy
+1808;Magnesium;Mg;12;H. Davy
+1808;Boron;B;5;Joseph Louis Gay-Lussac 
+1811;Iodine;I;53;B. Curtois
+1817;Cadmium;Cd;48;F.Stromeyer
+1817;Lithium;Li;3;J. A. Arvedson
+1817;Selenium;Se;34;J. J. Berzelius
+1823;Silicon;Si;14;Joseph-Louis Gay-Lussac
+1825;Aluminum;Al;13;H. C. Oersted
+1826;Bromine;Br;35;A. J. Balard
+1828;Thorium;Th;90;J. J. Berzelius
+1831;Vanadium;V;23;N. G. Sefstr0m
+1839;Lanthanum;La;57;C. G. Mosander
+1843;Erbium;Er;68;C. G. Mosander
+1843;Terbium;Tb;65;C. G. Mosander
+1844;Ruthenium;Ru;44;C. Claus
+1860;Cesium;Cs;55;Robert Bunsen and Gustav Kirchhoff
+1861;Rubidium;Rb;37;Robert Bunsen and Gustav Kirchhoff
+1861;Thallium;Tl;81;W. Crookes
+1863;Indium;In;49;Ferdinand Reich and Hieronymous Theodor Richter.
+1868;Helium;He;2;P.J.C.Jansen 1869 J.N.Locker
+1875;Gallium;Ga;31;L. de Boisbaudran
+1878;Ytterbium;Yb;70;J. Ch. G. de Marignac
+1879;Holmium;Ho;67;P. T. Cleve
+1879;Samaria;Sm;62;L. de Boisbaudran
+1879;Scandium;Sc;21;L. F. Nilson
+1879;Thulium;Tu;69;P. T. Cleve
+1880;Gadolinium;Gd;64;J. Ch. G. de Marignac
+1885;Neodymium;Nd;60;G. Auer von Welsbach
+1885;Praseodymium;Pr;59;G. Auer von Welsbach
+1886;Dysprosium;Dy;66;L. de Boisbaudran
+1886;Fluorine;F;9;H. Moissan
+1886;Germanium;Ge;32;C. Winkler
+1889;Europe;Eu;63;W. Crookes
+1894;Argon;Ar;18;W.Ramsay and J.W.S.Rayleigh
+1898;Krypton;Kr;36;W.Ramsay and M.W.Travers
+1898;Neon;Ne;10;W.Ramsay and M.W.Travers
+1898;Xenon;Xe;54;W.Ramsay and M.W.Travers
+1898;Polonium;Po;84;Pierre and Marie Curie
+1898;Radium;Ra;88;Pierre and Marie Curie
+1899;Actinium;Ac;89;A. Debierne
+1900;Radon;Rn;86;F. E. Dorn
+1907;Lutetium;Lu;71;G. Urbain
+1917;Protactinium;Pa;91;O. Hahn and L. Meitner
+1923;Hafnium;Hf;72;Dirk Coster and Hevesy György
+1925;Rhenium;Re;75;W. and Ida Noddack
+1937;Technetium;Tc;43;E. Segre and G. Perrier
+1939;Francium;Fr;87;Margueritte Perey
+1940;Astatine;At;85;D.R. Corson, McKenzie and E.Segre
+1940;Neptunium;Np;93;McMillan and O. Abelson
+1940;Plutonium;Pu;94;G.T.Seaborg and McMillan
+1944;Americium;Am;95;G.T.Seaborg, R.A.James, A.Ghiorso and L.O.Morgan
+1944;Curium;Cm;96;G.T.Seaborg, R.A.James and A.Ghiorso
+1945;Promethium;Pm;61;I.A.Marinski and L.E.Glendenin
+1949;Berkelium;Bk;97;G.T.Seaborg, G.G.Thompson and A.Ghiorso
+1952;Einsteinium;Es;99;A.Ghiorso, G.T.Seaborg, G.G.Thompson, G.H.Higgins, s.m.
+1953;Fermium;Fm;100;A.Ghiorso, G.T.Seaborg, G.G.Thompson, G.H.Higgins and m.
+1955;Mendelevium;Md;101;A.Ghiorso, G.T.Seaborg, B.G.Harvey and m.
+1958;Nobelium;No;102;A.Ghiorso, G.T.Seaborg, T.Sikkeland and m.
+1961;Lawrencium;Lr;103;A.Ghiorso, T.Sikkeland, R.E.Larsh and R.T.Latimer
+1966;Rutherfordium;Rf;104;C.N.Flerov
+1967;Dubnium;Db;105;Dubna
+1974;Seaborgium;Sg;106;University of California, Berkeley
+1976;Bohrium;Bh;107;Y. Oganessian, Dubna
+1982;Meitnerium;Mt;109;Peter Armbruster and Gottfried MTinzenberg,GSI
+1984;Hassium;Hs;108;Peter Armbruster�and�Gottfried MTinzenberg
+1994;Darmstadtium;Ds;110;S. Hofmann,V. Ninov and mandok
+1994;Roentgenium;Rg;111;S. Hofmann,V. Ninov and mandok
+1996;Copernicium;Cn;112;S. Hofmann,V. Ninov and mandok
+1999;Flerovium;Fl;114;Joint Institute for Nuclear Research
+2001;Livermorium;Lv;116;Joint Institute for Nuclear Research
+2004;Nihonium;Nh;113;Joint Institute for Nuclear Research
+2004;Moscovium;Mc;115;Joint Institute for Nuclear Research
+2006;Oganesson;Og;118;Joint Institute for Nuclear Research
+2010;Tennessine;Ts;117;-
