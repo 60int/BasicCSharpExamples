@@ -26,7 +26,57 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operators.Console", "Operat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pilots.Console", "Pilots.Console\Pilots.Console.csproj", "{8707E67B-6FC7-451A-A013-B0CCEE532525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMatrix.Console", "SimpleMatrix.Console\SimpleMatrix.Console.csproj", "{3C39BD5D-654D-483F-8BDD-EEB0AD5B264E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleMatrix.Console", "SimpleMatrix.Console\SimpleMatrix.Console.csproj", "{3C39BD5D-654D-483F-8BDD-EEB0AD5B264E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSV Files", "CSV Files", "{3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basketball2004", "Basketball2004", "{C3D0E361-9A88-48BD-A4CE-429C532FFF01}"
+	ProjectSection(SolutionItems) = preProject
+		Basketball2004.Console\bin\Debug\net6.0\results.csv = Basketball2004.Console\bin\Debug\net6.0\results.csv
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chemistry", "Chemistry", "{93FF073D-FA11-442E-9B41-53EE65C79F61}"
+	ProjectSection(SolutionItems) = preProject
+		Chemistry.Console\bin\Debug\net6.0\chemistry.csv = Chemistry.Console\bin\Debug\net6.0\chemistry.csv
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dogs", "Dogs", "{54AF5E96-AC40-4C5E-B0B3-DBE728AF886E}"
+	ProjectSection(SolutionItems) = preProject
+		Dogs.Console\bin\Debug\net6.0\DogBreeds.csv = Dogs.Console\bin\Debug\net6.0\DogBreeds.csv
+		Dogs.Console\bin\Debug\net6.0\DogNames.csv = Dogs.Console\bin\Debug\net6.0\DogNames.csv
+		Dogs.Console\bin\Debug\net6.0\Dogs.csv = Dogs.Console\bin\Debug\net6.0\Dogs.csv
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lefthanded", "Lefthanded", "{7675902C-8319-4077-B56A-ACBED8AE06E9}"
+	ProjectSection(SolutionItems) = preProject
+		Lefthanded.Console\Resources\lefthanded.csv = Lefthanded.Console\Resources\lefthanded.csv
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpeningWeekend", "OpeningWeekend", "{49569857-D078-489B-9E13-64243728E932}"
+	ProjectSection(SolutionItems) = preProject
+		OpeningWeekend.Console\bin\Debug\net6.0\openingweekend.txt = OpeningWeekend.Console\bin\Debug\net6.0\openingweekend.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operators", "Operators", "{2EEDB911-5FB5-4E16-AEB7-4E9C6AA651C6}"
+	ProjectSection(SolutionItems) = preProject
+		Operators.Console\bin\Debug\net6.0\expressions.txt = Operators.Console\bin\Debug\net6.0\expressions.txt
+		Operators.Console\bin\Debug\net6.0\results.txt = Operators.Console\bin\Debug\net6.0\results.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pilots", "Pilots", "{5576DC68-C5BD-46F2-BC4C-DDCFD8258156}"
+	ProjectSection(SolutionItems) = preProject
+		Pilots.Console\bin\Debug\net6.0\pilots.csv = Pilots.Console\bin\Debug\net6.0\pilots.csv
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ride", "Ride", "{D367041F-1E8D-40FB-9E7F-47BF6DBD3C2C}"
+	ProjectSection(SolutionItems) = preProject
+		Ride.Console\Resources\taxis.csv = Ride.Console\Resources\taxis.csv
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Taxes", "Taxes", "{5DEE7642-FDA0-442A-BCD7-0D8D4CFF6B48}"
+	ProjectSection(SolutionItems) = preProject
+		Taxes.Console\bin\Debug\net6.0\taxes.csv = Taxes.Console\bin\Debug\net6.0\taxes.csv
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +127,17 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3D0E361-9A88-48BD-A4CE-429C532FFF01} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
+		{93FF073D-FA11-442E-9B41-53EE65C79F61} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
+		{54AF5E96-AC40-4C5E-B0B3-DBE728AF886E} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
+		{7675902C-8319-4077-B56A-ACBED8AE06E9} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
+		{49569857-D078-489B-9E13-64243728E932} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
+		{2EEDB911-5FB5-4E16-AEB7-4E9C6AA651C6} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
+		{5576DC68-C5BD-46F2-BC4C-DDCFD8258156} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
+		{D367041F-1E8D-40FB-9E7F-47BF6DBD3C2C} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
+		{5DEE7642-FDA0-442A-BCD7-0D8D4CFF6B48} = {3DC20FAC-1CC7-4B1E-A4AC-010004FB94C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30E6EB5A-6220-456B-9A0C-FE21D4260827}
