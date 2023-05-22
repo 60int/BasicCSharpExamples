@@ -55,17 +55,13 @@ class Program
     }
     private static string Task3()
     {
-        string pattern = @"^[a-zA-Z]+$";
-        Regex regex = new(pattern);
-        Match match;
-        string symbol;
-        Console.Write("5. Task: Write a checmical symbol: ");
-        string? v = Console.ReadLine();
-        symbol = v!;
-        do
+        Console.Write("5. Task: Write a chemical symbol: ");
+        string symbol = Console.ReadLine();
+        while (symbol.Length < 1 || symbol.Length > 2 || !symbol.All(char.IsLetter))
         {
-            match = regex.Match(symbol);
-        } while (!(symbol.Length == 1 || symbol.Length == 2) && match.Success);
+        Console.Write("Invalid input. Please enter a chemical symbol with 1 or 2 letters: ");
+        symbol = Console.ReadLine();
+        }
         return symbol;
     }
     private static void Task4(string symbol)
