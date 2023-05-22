@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using System.Xml;
 
 class Program
@@ -13,7 +13,7 @@ class Program
     //Third task
     //Search for the real name of the team from Barcelona and display it on the console
 
-    //Fourth tasl
+    //Fourth task
     //Locate the teams that played on 2004.11.21 and display the scores on the console
 
     //Fifth task
