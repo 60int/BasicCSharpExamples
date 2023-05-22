@@ -51,7 +51,8 @@ class Program
     }
     private static void Task2()
     {
-        Console.WriteLine($"2. Task: {elements.Count(a => a.Year!.Contains("Ancient"))}");
+        int ancientCount = elements.Count(a => a.Year!.Contains("Ancient"));
+        Console.WriteLine($"2. Task: Number of elements discovered in ancient times: {ancientCount}");
     }
     private static string Task3()
     {
@@ -67,44 +68,36 @@ class Program
     private static void Task4(string symbol)
     {
         Console.WriteLine("4. Task: Search: ");
-        bool symbolIsTrue = false;
-        for (int i = 0; i < elements.Count; i++)
+        Element element = elements.FirstOrDefault(e => e.Symbol?.Equals(symbol, StringComparison.OrdinalIgnoreCase) == true);
+        if (element != null)
         {
-            if (elements[i].Symbol?.ToUpper() == symbol.ToUpper())
-            {
-                symbolIsTrue = true;
-                Console.WriteLine($"\tSymbol of the element: {elements[i].Symbol}");
-                Console.WriteLine($"\tName of the element: {elements[i].Name}");
-                Console.WriteLine($"\tAtomic umber of the element: {elements[i].AtomicNumber}");
-                Console.WriteLine($"\tYear of discovery: {elements[i].Year}");
-                Console.WriteLine($"\tThe chemists name: {elements[i].Chemist}");
-            }
+            Console.WriteLine($"\tSymbol of the element: {element.Symbol}");
+            Console.WriteLine($"\tName of the element: {element.Name}");
+            Console.WriteLine($"\tAtomic number of the element: {element.AtomicNumber}");
+            Console.WriteLine($"\tYear of discovery: {element.Year}");
+            Console.WriteLine($"\tThe chemist's name: {element.Chemist}");
         }
-        if (symbolIsTrue == false)
+        else
         {
             Console.WriteLine("Symbol doesn't exist");
         }
     }
     private static void Task5()
     {
-        int longest = 0;
-        for (int i = 0; i < elements.Count - 1; i++)
-        {
-            if (elements[i].Year != "Ancient")
-            {
-                if (int.Parse(elements[i + 1].Year) - int.Parse(elements[i].Year)> longest)
-                {
-                    longest = int.Parse(elements[i + 1].Year) - int.Parse(elements[i].Year);
-                }
-            }
-        }
+        int[] years = elements.Where(e => e.Year != "Ancient").Select(e => int.Parse(e.Year)).OrderBy(y => y).ToArray();
+        int longest = Enumerable.Range(0, years.Length - 1).Max(i => years[i + 1] - years[i]);
         Console.WriteLine($"5. Task: The longest year between two discoveries was {longest}.");
     }
     private static void Task6()
     {
-        Console.WriteLine("8. Task: Statistics: ");
-        elements.GroupBy(j => j.Year).Where(g => g.Count() > 3 && g.Key != "Ancient").ToList().ForEach(a => Console.WriteLine($"\t{a.Key}: {a.Count()} pieces."));
+        Console.WriteLine("8. Task: Years with three or more discoveries: ");
+        var groups = elements.GroupBy(j => j.Year).Where(g => g.Count() > 3 && g.Key != "Ancient");
+        foreach (var group in groups)
+        {
+            Console.WriteLine($"\t{group.Key}: {group.Count()} discoveries.");
+        }
     }
+
 }
 class Element
 {
